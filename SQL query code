@@ -18,3 +18,53 @@ SELECT *
 FROM cte1
 ORDER BY year asc
 
+---CTE showing number of Shops on the OPP market by area (nearest landmark) over time 
+with cte2 AS (
+SELECT EXTRACT(YEAR FROM instance_date) AS year,
+COUNT(CASE WHEN property_sub_type_en = 'Shop' THEN property_sub_type_en
+ELSE NULL
+END) AS Properties_Sold,
+reg_type_en AS registration_type,
+nearest_landmark_en
+FROM dubai_prop3
+WHERE reg_type_en LIKE 'Off-Plan Properties'
+GROUP BY year, reg_type_en, nearest_landmark_en
+)
+SELECT * 
+FROM cte2
+WHERE nearest_landmark_en IS NOT NULL 
+ORDER BY Properties_Sold desc
+
+--- CTE showing number of flats on the OPP market 
+with cte3 AS (
+SELECT EXTRACT(YEAR FROM instance_date) AS year,
+COUNT(CASE WHEN property_sub_type_en = 'Flat' THEN property_sub_type_en
+ELSE NULL
+END) AS Properties_Sold,
+reg_type_en AS registration_type,
+nearest_mall_en
+FROM dubai_prop3
+WHERE reg_type_en LIKE 'Off-Plan Properties'
+GROUP BY year, reg_type_en, nearest_mall_en
+)
+SELECT * 
+FROM cte3
+WHERE nearest_mall_en IS NOT NULL 
+ORDER BY Properties_Sold desc
+
+----
+with cte5 AS (
+SELECT EXTRACT(YEAR FROM instance_date) AS year,
+ROUND(AVG(CASE WHEN property_sub_type_en LIKE '%Hotel%' THEN meter_sale_price 
+ELSE NULL END),2) AS average_price_per_sqm,
+reg_type_en AS registration_type,
+nearest_mall_en
+FROM dubai_prop3
+WHERE reg_type_en LIKE 'Off-Plan Properties'
+GROUP BY year, reg_type_en, nearest_mall_en
+)
+SELECT * 
+FROM cte5
+WHERE average_price_per_sqm IS NOT NULL
+AND nearest_mall_en IS NOT NULL
+ORDER BY Year desc
