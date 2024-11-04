@@ -52,19 +52,26 @@ FROM cte3
 WHERE nearest_mall_en IS NOT NULL 
 ORDER BY Properties_Sold desc
 
-----
-with cte5 AS (
-SELECT EXTRACT(YEAR FROM instance_date) AS year,
-ROUND(AVG(CASE WHEN property_sub_type_en LIKE '%Hotel%' THEN meter_sale_price 
-ELSE NULL END),2) AS average_price_per_sqm,
-reg_type_en AS registration_type,
-nearest_mall_en
-FROM dubai_prop3
-WHERE reg_type_en LIKE 'Off-Plan Properties'
-GROUP BY year, reg_type_en, nearest_mall_en
+---- Top 3 most expensive OPP hotel destinations over time
+WITH cte5 AS (
+    SELECT 
+        EXTRACT(YEAR FROM instance_date) AS year,
+        ROUND(AVG(CASE WHEN property_sub_type_en LIKE '%Hotel%' THEN meter_sale_price 
+            ELSE NULL END), 2) AS average_price_per_sqm,
+        reg_type_en AS registration_type,
+        nearest_metro_en
+    FROM dubai_prop3
+    WHERE reg_type_en LIKE 'Off-Plan Properties'
+    GROUP BY year, reg_type_en, nearest_metro_en
 )
-SELECT * 
-FROM cte5
+SELECT year, average_price_per_sqm, nearest_metro_en
+FROM cte5 AS main
 WHERE average_price_per_sqm IS NOT NULL
-AND nearest_mall_en IS NOT NULL
-ORDER BY Year desc
+    AND nearest_metro_en IS NOT NULL
+    AND (
+        SELECT COUNT(*) 
+        FROM cte5 AS sub
+        WHERE sub.year = main.year 
+        AND sub.average_price_per_sqm > main.average_price_per_sqm
+    ) < 3
+ORDER BY year DESC, average_price_per_sqm DESC;
