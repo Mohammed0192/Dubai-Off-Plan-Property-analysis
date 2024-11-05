@@ -75,3 +75,21 @@ WHERE average_price_per_sqm IS NOT NULL
         AND sub.average_price_per_sqm > main.average_price_per_sqm
     ) < 3
 ORDER BY year DESC, average_price_per_sqm DESC;
+
+
+with cte6 AS (
+SELECT property_sub_type_en,
+ROUND(AVG(CASE WHEN instance_year = 2021 THEN meter_sale_price ELSE NULL END),2) AS price_per_sqm1,
+ROUND(AVG(CASE WHEN instance_year = 2023 THEN meter_sale_price ELSE NULL END),2) AS price_per_sqm2,
+nearest_metro_en AS nearest_metro
+FROM dubai_prop3
+WHERE nearest_metro_en IS NOT NULL AND 
+reg_type_en LIKE 'Off-Plan Properties'
+GROUP BY property_sub_type_en, nearest_metro_en
+)
+SELECT property_sub_type_en, nearest_metro,
+ROUND(((price_per_sqm2 - price_per_sqm1) / price_per_sqm1),2) * 100 AS perc_incr
+FROM cte6
+WHERE price_per_sqm1 IS NOT NULL
+AND price_per_sqm2 IS NOT NULL
+ORDER BY perc_incr DESC
