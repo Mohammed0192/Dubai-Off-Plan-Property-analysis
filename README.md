@@ -21,7 +21,7 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 The companies main database structure as seen below consists of four tables: table1, table2, table3, table4, with a total row count of X records. A description of each table is as follows:
 - **Properties Table:** Dubai properties data structure consists  date, varchar and numerical data
 
-[https://github.com/Mohammed0192/Dubai-Off-Plan-Property-analysis/issues/1#issue-2636534920]
+![image](https://github.com/user-attachments/assets/b90b2683-5168-4074-a732-e08f35141665)
 
 
 # Executive Summary
@@ -48,6 +48,7 @@ Across Dubai overall, hotels have remained the most expensive off-plan property 
 
 
 
+
 ### Flats over Hotels in downtown areas:
 
 * **OPP Hotels becoming less popular and less centralised.** Less Hotel purchases in downtown Dubai (near Dubai Mall) and prices are more competitive near Al Barsha and Al-Kasir over time.
@@ -56,6 +57,7 @@ Across Dubai overall, hotels have remained the most expensive off-plan property 
 
 ![Screenshot 2024-11-05 223232](https://github.com/user-attachments/assets/a6a93495-45e3-4e46-b837-e2623e88890c)
 ![Screenshot 2024-11-05 224337](https://github.com/user-attachments/assets/cb39ec7c-bd2f-4785-995c-972928ea6c3b)
+
 
 
 
@@ -70,6 +72,7 @@ Across Dubai overall, hotels have remained the most expensive off-plan property 
 
 
 
+
 ### Growing popularity for Shop properties in Jebel Ali Village (IB Mall):
 
 * **Jebel Ali Village competitive space for OPP Shops.** OPP Shop prices near IB Mall have increased noticeably since 2021 yet the number of OPP shop purchases have remained low in that area. Higher prices with limited supply could indicate  investors confidence in the area’s growth potential or high competition in urban areas where land costs are high.
@@ -80,9 +83,10 @@ Across Dubai overall, hotels have remained the most expensive off-plan property 
 ![Screenshot 2024-11-07 105046](https://github.com/user-attachments/assets/b524346d-c366-4983-aa6d-6d33fc9bc20b)
 
 
+
 # Recommendations:
 
-Based on the insights and findings above, we would recommend the [stakeholder team] to consider the following: 
+Based on the insights and findings above, we would recommend a property startup company to consider the following: 
 
 * Flats near iconic landmarks are being favoured over Hotels particularly in Downtown Dubai. **Focus on Downtown Flats and High-Demand Areas.**
   
@@ -96,8 +100,7 @@ Based on the insights and findings above, we would recommend the [stakeholder te
 
 Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
 
-* Assumption 1 (ex: missing country records were for customers based in the US, and were re-coded to be US citizens)
+* Correct translations: the data set was in Arabic so currency is assumed to be in AED not Dollars
   
-* Assumption 1 (ex: data for December 2021 was missing - this was imputed using a combination of historical trends and December 2020 data)
-  
-* Assumption 1 (ex: because 3% of the refund date column contained non-sensical dates, these were excluded from the analysis)
+* Incomplete data: 2023 data is cut short because it was collected and stopped midway in the year 
+
