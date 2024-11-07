@@ -35,7 +35,6 @@ Across Dubai overall, hotels have remained the most expensive off-plan property 
 ![Screenshot 2024-11-05 220707](https://github.com/user-attachments/assets/067ff8a3-ed2c-4fdf-bf7b-11ef3296a68d)
 
 
-
 # Insights Deep Dive
 ### **Growing popularity of Al-Kasir / Marina Area:**:
 
@@ -47,18 +46,15 @@ Across Dubai overall, hotels have remained the most expensive off-plan property 
   
 * **4**  More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
 
-[Visualization specific to category 1]
+![Screenshot 2024-11-07 105942](https://github.com/user-attachments/assets/9269386f-c14e-4dc8-814f-cf360c23e14d)
+![Screenshot 2024-11-07 103655](https://github.com/user-attachments/assets/a526734d-1beb-4fbf-bf8d-e3b69dffa3b1)
 
 
 ### Flats over Hotels in downtown areas:
 
-* **Hotels purchases are less popular more centralised.** Less purchases are being made in the surrounding Dubai areas and becoming centralised in downtown areas (e.g. Dubai and Marina Mall)
+* **OPP Hotels becoming less popular and less centralised.** Less Hotel purchases in downtown Dubai (near Dubai Mall) and prices are more competitive near Al Barsha and Al-Kasir over time.
   
-* **Flats are more popular across Dubai.** OPP flats are becoming increasing popular over time especially in downtown areas but also across Dubai (e.g. other malls like Ibn Battuta and Mirdif) .
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Flats are more popular across Dubai.** OPP flats are becoming increasingly popular over time especially in downtown areas but also across Dubai (e.g. other malls like Ibn Battuta and Mirdif) .
 
 ![Screenshot 2024-11-05 223232](https://github.com/user-attachments/assets/a6a93495-45e3-4e46-b837-e2623e88890c)
 ![Screenshot 2024-11-05 224337](https://github.com/user-attachments/assets/cb39ec7c-bd2f-4785-995c-972928ea6c3b)
@@ -67,30 +63,22 @@ Across Dubai overall, hotels have remained the most expensive off-plan property 
 
 ### Office properties are in less demand post-COVID:
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Office properties were unpopular pre-COVID.** Across Dubai, some OPP Office purchases have simply stopped (e.g. near Ibn Battuta Mall). But this was exacerbated post-COVID where we see number of Offices in downtown Dubai (near Dubai Mall) match surrounding areas.
   
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Growing Office Prices in Marina** This fits the overall trend of increased property prices in Marina/Al-Kasir area
   
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+![Screenshot 2024-11-07 102755](https://github.com/user-attachments/assets/b24e25cd-2035-4b0a-817f-ec514bad4e8a)
+![Screenshot 2024-11-07 103342](https://github.com/user-attachments/assets/910a334f-19c5-4f8d-82d7-a4adef00c4d3)
+
+
+### Growing demand for Shop properties in Jebel Ali Village (IB Mall):
+
+* **Jebel Ali Village competitive space for OPP Shops.** OPP Shop prices near IB Mall have increased noticeably since 2021 yet the number of OPP shop purchases have remained low in that area. Higher prices with limited supply could indicate confidence among investors and developers in the area’s growth potential. 
   
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **OPP Shops are cheaper in Al-Kasir (near Marina Mall).** This reflects the popularity of Al-Kasir that the number of shops have increased in this area, causing a drop in OPP shop prices since 2019 - market saturation?
 
-[Visualization specific to category 3]
-
-
-### Growing demand for Shop properties in Jebel Ali Village:
-
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-
-[Visualization specific to category 4]
-
-
+![Screenshot 2024-11-07 104641](https://github.com/user-attachments/assets/ac7c09d9-0e60-48a0-bb5a-cb9237b10dfe)
+![Screenshot 2024-11-07 105046](https://github.com/user-attachments/assets/b524346d-c366-4983-aa6d-6d33fc9bc20b)
 
 # Recommendations:
 
