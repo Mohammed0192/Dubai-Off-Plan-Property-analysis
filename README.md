@@ -4,7 +4,7 @@ La Breeze Limited is a private limited company specializing in real estate inves
 
 Insights and recommendations are provided on the following key areas:
 
-- **Frequency Analysis by Property:** Analysing the frequency of each off-plan property (e.g. flat, hotel, office) across regions and over time 
+- **Frequency Sales Analysis by Property:** Analysing the frequency off-plan property sales (e.g. flat, hotel, office) across regions and over time 
 - **Regional Comparison Analysis:** An evaluation of average sales per square mile according to each region. Regions being judged by nearest metro station, landmark or mall
 - **Property Sales Trend Analysis:** An assessment of property sales trend per square mile trends over time
 
